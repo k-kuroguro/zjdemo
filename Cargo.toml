@@ -1,0 +1,12 @@
+[package]
+name = "zellij-listfmt"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+colored = { git = "https://github.com/colored-rs/colored.git" }
+handlebars = "6.3.2"
+regex = "1.12.2"
+serde = "1.0.228"
+serde_json = "1.0.145"
+zellij-tile = "0.43.1"

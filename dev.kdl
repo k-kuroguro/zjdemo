@@ -1,0 +1,22 @@
+pane_frames true
+
+plugins {
+   zellij-listfmt location="file:target/wasm32-wasip1/debug/zellij-listfmt.wasm"
+}
+
+load_plugins {
+   zellij-listfmt
+}
+
+layout {
+   pane split_direction="vertical" {
+      pane name="COMPILE AND RELOAD" {
+         command "bash"
+         args "-c" "watchexec -w src -w Cargo.toml -- 'cargo build && zellij action start-or-reload-plugin zellij-listfmt'"
+      }
+      pane
+   }
+   pane size=1 borderless=true {
+      plugin location="zellij:status-bar"
+   }
+}
