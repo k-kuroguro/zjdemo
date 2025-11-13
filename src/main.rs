@@ -65,7 +65,7 @@ impl ZellijPlugin for State {
       }
 
       let args = pipe_message.args;
-      let current_session_only = args.get("current-session").is_some();
+      let current_session_only = args.contains_key("current-session");
 
       let mode = Mode::from_pipe_name(&pipe_message.name);
       let Some(mode) = mode else {

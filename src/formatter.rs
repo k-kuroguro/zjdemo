@@ -92,7 +92,7 @@ impl Session {
 }
 
 impl Tab {
-   fn new(tab_info: &TabInfo, pane_infos: &Vec<PaneInfo>) -> Self {
+   fn new(tab_info: &TabInfo, pane_infos: &[PaneInfo]) -> Self {
       Tab {
          position: tab_info.position,
          name: tab_info.name.clone(),
