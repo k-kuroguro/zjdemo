@@ -99,7 +99,7 @@ In addition to Handlebars' builtin helpers (`if`, `unless`, etc.), the plugin pr
 
 #### Math helpers
 
-**Helpers**: `{{add a b}}` `{{sub a b}}`, `{{mul a b}}`, `{{div a b}}`, `{{mod a b}}`
+`{{add a b}}` `{{sub a b}}`, `{{mul a b}}`, `{{div a b}}`, `{{mod a b}}`
 
 Takes two numbers as arguments and returns the result of the operation.
 
@@ -113,7 +113,7 @@ adventurous-capsicum - 2
 
 #### Style helper
 
-**Helper**: `{{style text attributes}}`
+`{{style text attributes}}`
 
 `attributes` is a comma-separated list of style attributes. You can use:
 - Styles: `bold`, `underline`, `italic`, `dimmed`, `reversed`, `blink`, `hidden`, `strikethrough`
@@ -131,7 +131,7 @@ auspicious-kangaroo
 
 #### join helper
 
-**Helper**: `{{join arg1 arg2 ... sep=','}}`
+`{{join arg1 arg2 ... sep=','}}`
 
 Joins multiple arguments with the specified separator.
 
